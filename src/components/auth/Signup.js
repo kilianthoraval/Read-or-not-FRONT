@@ -18,7 +18,34 @@ function RegistrationForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Effectuer la soumission du formulaire ici (par exemple, envoyer les données au serveur)
+    // function handleSignupSubmit(event) {
+    //   event.preventDefault();
+    
+    //   // Récupération des champs de formulaire
+    //   const username = document.getElementById('username').value;
+    //   const password = document.getElementById('password').value;
+      
+    //   // Envoi de la requête AJAX à l'endpoint d'authentification
+    //   fetch('/api/login', {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/json' },
+    //     body: JSON.stringify({ username, password })
+    //   })
+    //   .then(response => {
+    //     if (response.ok) {
+    //       // Rediriger l'utilisateur vers la page d'accueil s'il est authentifié
+    //       window.location.replace('/home');
+    //     } else {
+    //       // Afficher un message d'erreur s'il y a une erreur d'authentification
+    //       throw new Error('Mauvaises informations de connexion.');
+    //     }
+    //   })
+    //   .catch(error => {
+    //     // Afficher le message d'erreur dans la console
+    //     console.error(error);
+    //   });
+    // }
+    
   };
 
   return (

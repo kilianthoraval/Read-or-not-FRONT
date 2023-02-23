@@ -2,7 +2,7 @@ import React from 'react';
 import myGif from './gif_test_bye.gif';
 import '../Mentions/MentionsLegales.scss';
 
-const MentionsLegales = () => {
+const Mentions = () => {
     return(
         <div className='gif-container'>
 
@@ -13,4 +13,4 @@ const MentionsLegales = () => {
     );
 };
 
-export default MentionsLegales;
+export default Mentions;

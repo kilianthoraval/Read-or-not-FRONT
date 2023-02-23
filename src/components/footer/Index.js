@@ -6,13 +6,13 @@ function Footer() {
   return (
     <div className="footer-container">
       <div className="footer-content">
-          <Link to="/mentionslegales" className="footer-content">
+          <Link to="/Mentionslegales" className="footer-content">
             Mentions Légales
           </Link>
-          <Link to="/contact" className="footer-content">
+          <Link to="/Contact" className="footer-content">
             Contact
           </Link>
-          <Link to="/about" className="footer-content">
+          <Link to="/About" className="footer-content">
             A propos
           </Link>
       </div>

@@ -4,10 +4,11 @@ import Navbar from '../components/navbar/Navbar';
 import Home from '../components/home/Home';
 import Signup from '../components/auth/Signup';
 import Footer from '../components/footer/Index';
-import LoginForm from '../components/auth/Login';
-import MentionsLegales from '../components/Mentions/MentionsLegales';
+import LoginPage from '../components/auth/Login';
+import Mentions from '../components/Mentions/Mentions';
 import ContactForm from '../components/contact/ContactForm';
 import About from '../components/About/About'
+
 import LibraryPage from '../components/library';
 import Loader from './Loader';
 import './loaderStyle.scss';
@@ -34,8 +35,11 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/signup" element={<Signup />} />
-              <Route path="/login" element={<LoginForm />} />
+              <Route path="/login" element={<LoginPage />} />
               <Route path="/bibliotheque" element={<LibraryPage />} />
+              <Route path="/Mentionslegales" element={<Mentions />} />
+              <Route path="/Contact" element={<ContactForm />} />
+              <Route path="/About" element={<About />} />
             </Routes>
             <Footer />
           </>

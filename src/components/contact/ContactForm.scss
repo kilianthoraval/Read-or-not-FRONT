@@ -5,7 +5,12 @@
     height: 100vh;
     background-color: #f2f2f2;
   }
-  
+  .contact-title {
+    position: absolute;
+    top: 5rem;
+    // margin-bottom: 20px;
+  }
+
   .contact-form {
     display: flex;
     flex-direction: column;

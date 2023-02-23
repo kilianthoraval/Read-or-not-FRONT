@@ -1,8 +1,8 @@
-// .container-pic {
-//     display: inline;
-//     background: rgb(5, 248, 58);
 
-// }
+// .image {
+//     background-image:url(./dev.png);
+//   }
+
 
 .gifAbout-container {
     // display: flex;
@@ -15,22 +15,21 @@
     // margin-right: 15%;
     // justify-content: center;
     // align-items: center;
-    display: flex;
+    display:inline-flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #ebebeb;
-    background: rgb(5, 248, 58);
-
+    background-color: #08fd00;
+    
 }
 
 
 
-.dev {
-// display: flex;
-// justify-content: flex-start;
-flex-direction: column;
-}
+// .dev {
+// display: inline;
+// flex-direction: row;
+
+// }
 
 img {
     width: 100%;

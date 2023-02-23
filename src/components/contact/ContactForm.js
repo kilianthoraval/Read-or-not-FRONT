@@ -17,7 +17,9 @@ function ContactForm(props) {
 
   return (
   <div className="contactform-container">
+      <div className='contact-title'>
   <h1>Contact</h1>
+  </div>
   <form onSubmit={handleSubmit} className="contact-form">
     <label>
       Pseudo:

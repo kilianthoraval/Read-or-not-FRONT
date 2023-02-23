@@ -1,8 +1,8 @@
+// .container-pic {
+//     display: inline;
+//     background: rgb(5, 248, 58);
 
-// .image {
-//     background-image:url(./dev.png);
-//   }
-
+// }
 
 .gifAbout-container {
     // display: flex;
@@ -20,14 +20,17 @@
     align-items: center;
     height: 100vh;
     background-color: #ebebeb;
-    
+    background: rgb(5, 248, 58);
+
 }
 
 
 
-// .dev {
-
-// }
+.dev {
+// display: flex;
+// justify-content: flex-start;
+flex-direction: column;
+}
 
 img {
     width: 100%;

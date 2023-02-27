@@ -15,21 +15,25 @@
     // margin-right: 15%;
     // justify-content: center;
     // align-items: center;
-    display:inline-flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #08fd00;
+    background-color: #ffffff;
     
 }
 
 
+.dev-title {
+    position: absolute;
+    top:3rem;
+}
 
-// .dev {
-// display: inline;
-// flex-direction: row;
-
-// }
+.dev {
+    // display: flex;
+    // justify-content:center;
+    flex-direction: column;
+}
 
 img {
     width: 100%;

@@ -11,14 +11,18 @@ const dev = image;
 
 function About(){
     return(
-       <div>
+       
+      
+      <div className='container-pic'> 
+
+        <div className='gifAbout-container'>
+
+        <div className='dev-title'>
         <figure>
         <img className='dev' src={dev} alt="image" />;   
         </figure>
-      
-      <div className='container-pic'> 
-        <div className='gifAbout-container'>
-        
+        </div>
+
         <figure className='pic'>
         <img src={myGifOfWiwi} alt="Photo of Wiwi" />
         <figcaption className='pic-legendeWiwi'>Photo of Wiwi</figcaption>
@@ -37,7 +41,7 @@ function About(){
         </figure>
         </div> 
         </div>
-        </div>  
+          
     );
 };
 

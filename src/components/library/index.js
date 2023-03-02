@@ -83,7 +83,7 @@ return (
 <div style={{ zIndex: 2 }}>
         <div>
           <img
-            style={{width: "auto", height: "auto" }}
+            style={{width: "auto", height: "auto", position: "relative", top: "0px", left: "0px", width: "80%" }}
             src={book.img} 
             alt={book.title}
           />

@@ -4,11 +4,30 @@ import React, { useState, useEffect } from 'react';
 
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
-
+import "react-awesome-slider/dist/styles.css";
+import "react-awesome-slider/dist/captioned.css";
 
 
 import "./style.scss";
 
+const buttonStyle = {
+  padding: "15px",
+  borderRadius: "50%",
+  background: "red",
+  opacity: 0.7,
+  fontSize: "20px"
+};
+const contentStyle = {
+  color: "black",
+  fontSize: "20px"
+};
+const bgImg = {
+  // position: "absolute",
+  zIndex: -1,
+  left: 0,
+  top: 0,
+  width: "80%"
+};
 
 function LibraryPage() {
   // const [books, setBooks] = useState([]);
@@ -50,20 +69,35 @@ fetchData();
 // );
 // }
 return (
-  <div>
-    <h1>React Awesome Slider avec appel à une API</h1>
-    <AwesomeSlider>
-      {data.map((book) => (
+  <AwesomeSlider
+  organicArrows={false}
+  buttonContentRight={<p style={buttonStyle}>{">"}</p>}
+  buttonContentLeft={<p style={buttonStyle}>{"<"}</p>}
+  play
+  // customContent={<p style={contentStyle}>{"I am the content/text"}</p>}
+  cancelOnInteraction={false} // should stop playing on user interaction
+  interval={6000}
+  >
+{data.map((book) => (
         <div key={book.id}>
-          <img src={book.img} alt={book.title} />
-          <h2>{book.title}</h2>
-          <p>{book.description}</p>
+<div style={{ zIndex: 2 }}>
+        <div>
+          <img
+            style={{width: "auto", height: "auto" }}
+            src={book.img} 
+            alt={book.title}
+          />
+          <h1>{book.title}</h1>
+        <p>{book.description}</p>
+          {/* <button> Click Me </button> */}
         </div>
+      </div>
+    
+      </div>
       ))}
     </AwesomeSlider>
-  </div>
-);
-};
+    );
+  };
 
 
 export default LibraryPage;

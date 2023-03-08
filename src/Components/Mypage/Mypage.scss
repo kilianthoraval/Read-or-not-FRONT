@@ -18,7 +18,36 @@
   // .mypage-carousel:first-child {
   //   margin-bottom: 50px;
   // }
+  .photo {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+  }
   
+  .photo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(81, 132, 66, 0.4);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    height: 30em; /* ajuster cette valeur selon la hauteur souhaitée */
+    border-radius: 10px;
+  }
+  
+  .photo:hover::after {
+    opacity: 1;
+  }
+
+  .photo:hover {
+    transform: translateY(-5px);
+    transform: scale(1.02);
+  }
+
+
   .mypage-carousel-item {
     text-align: center;
     display: flex;
@@ -40,8 +69,7 @@
  
   }
   
-  
-  
+
   
   @media (min-width: 768px) {
     .mypage-carousel {

@@ -26,14 +26,17 @@ const Mypage = () => {
 
   const itemsBookRead = data.map((book) => (
     <div key={book.id} className="mypage-carousel-item">
+      <div className="photo">
       <img src={book.img} alt={book.title}/>
+    </div>
     </div>
   ));
 
   const itemsBookToRead = data.map((book) => (
     <div key={book.id} className="mypage-carousel-item">
-      <img src={book.img} alt={book.title} />
-
+       <div className="photo">
+      <img src={book.img} alt={book.title}/>
+    </div>
     </div>
   ));
 

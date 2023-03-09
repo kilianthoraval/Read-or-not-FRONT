@@ -35,7 +35,7 @@ const booksRead = data.filter((book) => readList.includes(book.id));
 const responsive = {
 0: { items: 1 },
 568: { items: 4 },
-1024: { items: 6 },
+1024: { items: 4 },
 };
 
 const itemsBookRead = booksRead.map((book) => (
@@ -65,6 +65,7 @@ return (
 <div className="mypage-container">
 <h1 className="bibliotheque-title">Ma Bibliothèque</h1>
 <h2>Livres à lire</h2>
+<div className="carousel-haut">
 <AliceCarousel
      items={itemsBookRead}
      responsive={responsive}
@@ -72,7 +73,9 @@ return (
      dotsDisabled={true}
      buttonsDisabled={true}
    />
+</div>
 <h2>Livres lus</h2>
+<div className="carousel-bas">
 <AliceCarousel
      items={itemsBookToRead}
      responsive={responsive}
@@ -80,7 +83,7 @@ return (
      dotsDisabled={true}
      buttonsDisabled={true}
    />
-   
+</div>   
 </div>
 );
 };

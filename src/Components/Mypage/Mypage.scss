@@ -4,6 +4,7 @@
     margin-bottom: 10em;
     display: flex;
     flex-direction: column;
+    min-height: 89em;
 
   }
   
@@ -62,6 +63,7 @@
     height: 30em; /* ajuster cette valeur selon la hauteur souhaitée */
     border-radius: 10px;
     max-width: 15em;
+    margin-top: 2em;
     // transition: transform 0.5s ease-out;
   }
 
@@ -71,13 +73,17 @@
     flex-direction: column;
     align-items: center;
     margin: 0;
+    width: 300px;;
   }
   
-  
-  .mypage-carousel-item img:hover {
- 
+  .carousel-haut, .carousel-bas{
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+    max-width: 100%;
+    height: 550px;
   }
-  
+
+
   
   
   

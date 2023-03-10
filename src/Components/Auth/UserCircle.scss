@@ -1,9 +1,15 @@
 .icon-container {
-    display:inline-block;
+    display:flex;
+    align-items: center;
+    margin-right: 10px;
   
 }
 
+.welcome-container {
+    display: inline-flex;
+}
 .welcome {
-    display: inline-block;
-    justify-content: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
 }

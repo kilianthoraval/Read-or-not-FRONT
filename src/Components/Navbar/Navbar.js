@@ -14,6 +14,11 @@ function Navbar({isLogged}) {
         {/* <Link to="/" className="navbar-logo">
           LOGO
         </Link> */}
+          </div>
+          <div className="navbar-content-center">
+          <a className="navbar-link-logo" href='/'><img src="https://media.discordapp.net/attachments/1061603926757085186/1081206907827666954/Logo_ReadOrNot_PNG_INT_BLC.png?width=597&height=539" alt="logo" /></a>
+          </div>
+          
         <div className="navbar-content-left">
           {/* <Link to="/bibliotheque" className="navbar-link">
             Bibliothèque  
@@ -24,18 +29,14 @@ function Navbar({isLogged}) {
           <Link to="/signup" className="navbar-link">
             Inscription  
           </Link>
-          
-           </>) : ( 
-          <UserCircle /> )}
-          </div>
-          <div className="navbar-content-center">
-          <a className="navbar-link-logo" href='/'><img src="https://media.discordapp.net/attachments/1061603926757085186/1081206907827666954/Logo_ReadOrNot_PNG_INT_BLC.png?width=597&height=539" alt="logo" /></a>
-          </div>
           <div className="navbar-content-right">
           <Link to ="/mypage" className="navbar-link">
            Profil
           </Link>
           </div>
+           </>) : ( 
+          <UserCircle /> )}
+        
         </div>
 
     </div>

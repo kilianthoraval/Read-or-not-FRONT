@@ -4,7 +4,8 @@ import './Login.scss';
 // import Signup from './Signup';
 import ResetPassword from './ResetPassword';
 
-function LoginPage() {
+
+function LoginPage({setIsLogged}) {
 const navigate = useNavigate();
 const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
@@ -44,6 +45,7 @@ const response = await fetch('http://kilianthoraval-server.eddi.cloud:8080/login
 
     if (data.token) {
       localStorage.setItem('token', data.token)
+      setIsLogged(true);
       navigate('/');
     } else {
       // Authentification échouée

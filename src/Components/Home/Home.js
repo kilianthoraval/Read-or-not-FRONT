@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import SearchBar from '../Search/SearchBar';
 // import { Link } from 'react-router-dom';
+
 import './style.scss';
 
 function Home() {

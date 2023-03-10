@@ -13,12 +13,14 @@ import SearchBar from '../Components/Search/SearchBar';
 import SearchResults from '../Components/Search/SearchResults';
 import Mypage from '../Components/Mypage/Mypage';
 import BookDetails from '../Components/Books/BookDetail'
+import { useState } from 'react';
 import './loaderStyle.scss';
 import './style.scss';
 
 
 function App() {
   const [loading, setLoading] = React.useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   React.useEffect(() => {
     setTimeout(() => {
@@ -33,40 +35,41 @@ function App() {
         {loading ? (
           <Loader /> // Afficher le loader si la page est en cours de chargement
         ) : (
-          <>           
+          <>  
+          <Navbar isLogged={isLoggedIn} />         
             <Routes>
               <Route path="/" element={<>
-                <Navbar />
+                
                 <Home />
                 </>} />
               <Route path="/signup" element={<>
-                <Navbar />
+               
                 <Signup />
               </>} />
               <Route path="/login" element={<>
-                <Navbar />
-                <LoginPage />
+                
+                <LoginPage  setIsLogged={setIsLoggedIn}/>
               </>} />
               <Route path="/mypage" element={<>
-                <Navbar />
+                
                 <Mypage />
                 </>} />
                 <Route path="/search" element={<>
-                 <Navbar />
+            
                   {/* <SearchBar /> */}
                   <SearchResults />
                     </>} />
               <Route path="/books/:id" element={<>
-                <Navbar />
+              
                 <BookDetails /> 
               </>} />
               <Route path="/contact" element={<>
-                <Navbar />
+               
                 <ContactForm/>
                 </>} />
               <Route path="/mentionslegales" element={<MentionsLegales />} />
               <Route path="/about" element={<>
-                <Navbar />
+             
                 <About />
                 </>} />
             </Routes>

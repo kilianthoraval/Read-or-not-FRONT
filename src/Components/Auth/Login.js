@@ -37,7 +37,7 @@ const requestOptions = {
 
 console.log('Sending request:', requestOptions);
 
-    fetch('http://kilianthoraval-server.eddi.cloud:8080/login', requestOptions)
+    fetch(process.env.REACT_APP_BASE_URL + '/login', requestOptions)
   .then(response => {
     console.log('response' , response );
     return response.json()})

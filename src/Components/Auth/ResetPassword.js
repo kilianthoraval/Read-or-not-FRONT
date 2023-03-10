@@ -20,7 +20,7 @@ function ResetPassword() {
 
     console.log('Sending request:', requestOptions);
 
-    const response = await fetch('http://kilianthoraval-server.eddi.cloud:8080/reset_password', requestOptions)
+    const response = await fetch(process.env.REACT_APP_BASE_URL + '/reset_password', requestOptions)
       .then(response => response.json())
       .then(data => {
         console.log('Response:', response);

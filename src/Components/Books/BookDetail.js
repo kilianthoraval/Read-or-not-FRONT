@@ -55,7 +55,7 @@ function BookDetails({ match }) {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch(`http://kilianthoraval-server.eddi.cloud:8080/book/${id}`);
+      const response = await fetch(`${process.env.REACT_APP_BASE_URL}/book/${id}`);
       const data = await response.json();
       setBook(data);
     };

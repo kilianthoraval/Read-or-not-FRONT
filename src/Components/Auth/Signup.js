@@ -36,7 +36,7 @@ const handleSubmit = async (event) => {
   };
 
   try {
-      const response = await fetch('http://kilianthoraval-server.eddi.cloud:8080/signup', requestOptions);
+      const response = await fetch(process.env.REACT_APP_BASE_URL + '/signup', requestOptions);
       
 
       console.log('Response received:', response);

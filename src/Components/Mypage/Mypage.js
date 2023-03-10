@@ -12,7 +12,7 @@ const [readList, setReadList] = useState([]);
 
 useEffect(() => {
 const fetchData = async () => {
-const response = await fetch("http://kilianthoraval-server.eddi.cloud:8080/books");
+const response = await fetch(process.env.REACT_APP_BASE_URL + '/books');
 const result = await response.json();
 setData(result);
 };

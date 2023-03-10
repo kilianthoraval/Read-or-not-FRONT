@@ -11,7 +11,7 @@ function SearchBar() {
   const handleSearch = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`http://kilianthoraval-server.eddi.cloud:8080/search?inputsearch=${searchTerm}`);
+      const response = await fetch(`${process.env.REACT_APP_BASE_URL}/search?inputsearch=${searchTerm}`);
       const results = await response.json();
       setSearchResults(results);
       setSearchTerm('');

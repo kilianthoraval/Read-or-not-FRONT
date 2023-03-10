@@ -10,7 +10,7 @@ function SearchResults() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch(`http://kilianthoraval-server.eddi.cloud:8080/search?inputsearch=${searchTerm}`);
+      const response = await fetch(`${process.env.REACT_APP_BASE_URL}/search?inputsearch=${searchTerm}`);
       const result = await response.json();
       setData(result);
     };

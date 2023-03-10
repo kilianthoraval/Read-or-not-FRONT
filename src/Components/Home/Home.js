@@ -7,7 +7,7 @@ function Home() {
 const [book, setBook] = useState(null);
 
 useEffect(() => {
-fetch('http://kilianthoraval-server.eddi.cloud:8080/book/2')
+fetch(process.env.REACT_APP_BASE_URL + '/book/2')
 .then(response => response.json())
 .then(data => setBook(data))
 .catch(error => console.error(error));
